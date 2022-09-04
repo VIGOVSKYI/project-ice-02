@@ -74,6 +74,10 @@ background-image: url(../images/desctop/header/pointdesktop.png);
   width: 60px;
   height: 65px;
 }
+.mobile-menu-open {
+ display: none;
+
+}
 
 .header-site-nuv__list {
   display: flex;
