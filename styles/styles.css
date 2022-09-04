@@ -42,39 +42,48 @@ a {
 }
 
 /* ===========header============= */
-
-.container__header {
-  background-color: #84a178;
-}
+/* ===========header-top================ */
 
 .container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
+
+
+@media screen and (min-width:1200px) {
+  
+
+.header {
+ background-color: #84a178;
+
+background-image: url(../images/desctop/header/pointdesktop.png);
+  background-repeat: no-repeat;
+  background-position: left 0px bottom 0px;
+  background-size: 100%;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12px;
-  margin-bottom: 40px;
+  padding-top: 18px;
 }
 
-.logo {
+.header__logo {
   width: 60px;
   height: 65px;
 }
 
-.site-nuv__list {
+.header-site-nuv__list {
   display: flex;
 }
 
-.site-nuv__item:not(:last-child) {
+.header-site-nuv__item:not(:last-child) {
   margin-right: 27px;
 }
-.site-nuv__link {
+
+.header-site-nuv__link {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -83,12 +92,12 @@ a {
   cursor: pointer;
   color: #fcfcfc;
 }
-.site-nuv__link:hover,
-.site-nuv__link:focus {
+.header-site-nuv__link:hover,
+.header-site-nuv__link:focus {
   color: #f8d24e;
 }
 
-.header__button {
+.header-button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -103,7 +112,12 @@ a {
   padding: 12px 33px;
 }
 
-.header-title {
+.header-button__icon {
+  margin: 0px 0px 0px 7px;
+}
+/* ===========header-top================ */
+
+.header-content-title {
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -114,11 +128,12 @@ a {
   color: #fcfcfc;
   margin-bottom: 28px;
 }
-.button-list {
-  margin-bottom: 40px;
+
+.header-content__button-list {
+  margin-bottom: 42px;
 }
 
-.button__products {
+.header-content__btn {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -135,7 +150,7 @@ a {
   margin-right: 32px;
 }
 
-.button__products__link {
+.header-content__link {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -146,13 +161,13 @@ a {
   color: #f8d24e;
 }
 
-.header-description {
+.header-content-description {
   display: flex;
   align-items: center;
   
 }
 
-.header-description__wrapper {
+.header-content-description__wrapper {
   width: 200px;
   margin-left: 16px;
   }
@@ -164,8 +179,9 @@ a {
   font-size: 14px;
   line-height: 140%;
   color: #ffffff;
-  margin-top: 35px;
-  margin-bottom: 25px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  padding-top: 0px;
 }
 
 .header-description__button {
@@ -177,12 +193,364 @@ a {
   display: flex;
 }
 
-  .header-img {
-    width: 455px;
-    height: 560px;
-    margin: 0 50px 0 0;
-    background-image:url(../images/desctop/header/bigicecream-455.png);
+.header-content{
+  display: flex;
+  margin: 40px 0px 0px 0px;
+}
+
+.header-content-right {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-content-right__img{
+  width: 455px;
+  height: 560px;
+  filter: drop-shadow(0px 0px 100px rgb(228, 221, 221));
+  background-image:url(../images/desctop/header/icecream-455.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+}
+
+.header-content-right__list {
+  margin: 13px 0px 0px 0px;
+}
+
+.header-content-right__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.header-content-right__title {
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+
+}
+
+.header-content-right__text {
+font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #FFFFFF;
+
+}
+
+.header-content-description__img-tablet{
+  display: none;
+}
+
+
+}
+  
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    background-color: #84a178;
+
+    background-image: url(../images/tablet/header/pointtablet.png);
+    background-repeat: no-repeat;
+    background-position: left 0px bottom 0px;
+    background-size: 100%;
   }
+
+  .header__top {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 18px;
+  }
+
+  .header__logo {
+    width: 48px;
+    height: 44px;
+  }
+
+  .header-site-nuv__list {
+    display: none;
+  }
+ .mobile-menu-open {
+   background-color: transparent;
+   padding: 5px 0px;
+   margin-left: auto;
+
+ }
+  .header-button {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background: #f8d24e;
+    border-radius: 10px;
+    padding: 12px 34px;
+    margin-left: 32px;
+  }
+
+  .header-button__icon {
+    margin: 0px 0px 0px 7px;
+  }
+
+  .header-content-title {
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    margin-bottom: 40px;
+    margin-left: 12px;
+  }
+
+  .header-content-title__passion {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+  }
+
+  .header-content__button-list {
+    margin-bottom: 28px;
+  }
+
+  .header-content__btn {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+
+    padding: 6px 15px;
+
+    margin-right: 8px;
+  }
+
+  .header-content__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: #f8d24e;
+  }
+
+  .header-content-description {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .header-content-description__img-desktop {
+    display: none;
+  }
+
+
+  .header-content-description__wrapper {
+    width: 151px;
+    margin-left: 33px;
+  }
+
+  .header-description__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+  }
+
+  .header-description__button {
+    background-color: transparent;
+    padding: 0px 0 0 0;
+  }
+
+  .header-bottom {
+    display: flex;
+  }
+
+  .header-content {
+    display: flex;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .header-content-right {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .header-content-right__img {
+    width: 270px;
+    height: 343px;
+    filter: drop-shadow(0px 0px 100px rgb(228, 221, 221));
+    background-image: url(../images/tablet/header/icecream-270.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+  }
+
+  .header-content-right__list {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .header-content-right__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .header-content-right__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+
+  }
+
+  .header-content-right__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: #FFFFFF;
+
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .header-site-nuv__list {
+      display: none;
+    }
+  
+    .header-content-description{
+      display: none;
+    }
+.header-content-right__list{
+  display: none;
+}
+
+.header-button {
+  display: none;
+}
+
+  .header {
+    
+    background-color: #84a178;
+
+    background-image: url(../images/mobile/header/pointmobile.png);
+    background-repeat: no-repeat;
+    background-position: left 0px bottom 0px;
+    background-size: 100%;
+
+  }
+
+  .header__logo {
+    width: 40.5px;
+    height: 37px;
+  }
+  .mobile-menu-open {
+    background-color: transparent;
+
+  }
+
+    .header__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 18px;
+    }
+
+        .header-content-title {
+        font-family: 'Seymour One';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 33px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        
+          color: #FCFCFC;
+          margin-top: 61px;
+          margin-bottom: 32px;
+        }
+
+.header-content__button-list {
+  margin-bottom: 20px;
+}
+
+.header-content__btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  padding: 5px 5px;
+
+  margin-right: 8px;
+}
+
+.header-content__link {
+font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  text-decoration-line: underline;
+  cursor: pointer;
+  color: #f8d24e;
+}
+.header-content__img {
+  width: 170px;
+  height: 219px;
+  filter: drop-shadow(0px 0px 100px rgb(228, 221, 221));
+  background-image: url(../images/mobile/header/icecreammobile.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+ 
+}
+
+
+}
